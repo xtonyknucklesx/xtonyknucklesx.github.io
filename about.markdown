@@ -1,5 +1,5 @@
 ---
-# layout: pages-themes/time-machine@v0.2.0
+layout: splash
 title: About
 permalink: /about/
 ---
