@@ -1,0 +1,40 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - Git         # Change to your default branch if different
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Ruby environment
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'  # Use a Ruby version compatible with Jekyll 4.x
+          bundler-cache: true  # Caches installed gems to speed up builds
+
+      # Step 3: Install Jekyll and other dependencies
+      - name: Install dependencies
+        run: |
+          gem install jekyll -v 4.2.2
+          bundle install
+
+      # Step 4: Build your site using Jekyll 4.x
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build --destination _site
+
+      # Step 5: Deploy the generated site to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
