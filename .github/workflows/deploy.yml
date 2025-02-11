@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - gh-pages         # Change to your default branch if different
+      - Git         # Change to your default branch if different
   workflow_dispatch:
 
 permissions:
