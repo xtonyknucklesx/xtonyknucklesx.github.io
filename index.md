@@ -3,7 +3,7 @@ layout: home
 title: "Tony Rossi's Life"
 excerpt: "A portfolio showcasing my expertise in vulnerability management, threat modeling, GRC, and entrepreneurship."
 hero:
-  image: /assets/img/hero.jpg  # Replace with the path to your hero image
+  image: /assets/img/hero.png  # Replace with the path to your hero image
   overlay_color: "#000000"
   overlay_opacity: 0.5
 permalink: /
