@@ -1,16 +1,18 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="en" class="no-js">
+
+<html lang="en-US" class="no-js">
   <head>
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Tony Rossi’s Life - Tony Rossi’s Cybersecurity Portfolio</title>
-<meta name="description" content="A portfolio showcasing my expertise in vulnerability management, threat modeling, GRC, and entrepreneurship.">
+<!-- begin _includes/seo.html --><title>Tony Rossi - Tony Rossi’s Cybersecurity Portfolio</title>
+<meta name="description" content="Defending Tomorrow’s Digital World, Today.">
 
 
   <meta name="author" content="Tony Rossi">
@@ -20,13 +22,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Tony Rossi's Cybersecurity Portfolio">
-<meta property="og:title" content="Tony Rossi’s Life">
+<meta property="og:title" content="Tony Rossi">
 <meta property="og:url" content="https://xtonyknucklesx.github.io/">
 
 
-  <meta property="og:description" content="A portfolio showcasing my expertise in vulnerability management, threat modeling, GRC, and entrepreneurship.">
+  <meta property="og:description" content="Defending Tomorrow’s Digital World, Today.">
 
 
+
+  <meta property="og:image" content="https://xtonyknucklesx.github.io/assets/img/hero4.png">
 
 
 
@@ -42,16 +46,17 @@
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": null,
-      "url": "https://xtonyknucklesx.github.io/"
-    
-  }
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+    "name": null,
+    "url": "https://xtonyknucklesx.github.io/"
+}
 </script>
+
+
 
 
 
@@ -64,19 +69,18 @@
 
 
   <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tony Rossi's Cybersecurity Portfolio Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
+<script type="text/javascript">
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 
 
 
@@ -97,10 +101,6 @@
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
 
 <div class="masthead">
@@ -108,21 +108,104 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">
-          Tony Rossi's Cybersecurity Portfolio
-          
+        <a class="site-logo" href="/">
+          <img src="/assets/img/logo3.png" alt="Tony Rossi's Cybersecurity Portfolio">
         </a>
+
+        
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-fuck Guide</a>
+              <a
+                href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+                
+                
+              >About</a>
             </li><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+              <a
+                href="https://mmistakes.github.io/minimal-mistakes/about/"
+                
+                
+              >Projects/Portfolio</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/">Sample Posts</a>
+              <a
+                href="/year-archive/"
+                
+                
+              >Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/collection-archive/">Sample Collections</a>
+              <a
+                href="/collection-archive/"
+                
+                
+              >Resume</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/">Sitemap</a>
+              <a
+                href="/sitemap/"
+                
+                
+              >Contact</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/sitemap/"
+                
+                
+              >Entrepreneurship</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/sitemap/"
+                
+                
+              >Philanthropy</a>
             </li></ul>
+
+<!-- Hamburger menu that appears on small screens -->
+        <div class="hamburger-menu">
+          <button id="hamburger-toggle" aria-label="Toggle navigation">☰</button>
+          <ul class="side-menu"><li class="side-menu__item">
+                 <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+                  
+                  >
+                  About
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="https://mmistakes.github.io/minimal-mistakes/about/"
+                  
+                  >
+                  Projects/Portfolio
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="/year-archive/"
+                  
+                  >
+                  Blog
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="/collection-archive/"
+                  
+                  >
+                  Resume
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="/sitemap/"
+                  
+                  >
+                  Contact
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="/sitemap/"
+                  
+                  >
+                  Entrepreneurship
+                 </a>
+               </li><li class="side-menu__item">
+                 <a href="/sitemap/"
+                  
+                  >
+                  Philanthropy
+                 </a>
+               </li></ul>
+        </div>
+      </nav>
+
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
@@ -142,6 +225,38 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/img/hero4.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Tony Rossi
+
+        
+      </h1>
+      
+        <p class="page__lead">Defending Tomorrow’s Digital World, Today.
+</p>
+      
+      
+
+
+      
+    </div>
+  
+  
+</div>
+
 
 
 
@@ -151,9 +266,7 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">Tony Rossi's Life</h1>
-    
-    <h2 id="about-me">About Me</h2>
+    <h6 id="about-me">About Me</h6>
 
 <p>I’m <strong>Tony Rossi</strong>, a cybersecurity professional with over <strong>21 years of experience</strong> in vulnerability management, threat modeling, GRC, and entrepreneurship. My journey began in the U.S. Navy, where I built the first cybersecurity program for the submarine force and automated critical tasks using Python and open-source tools. Today, I channel that experience into innovative ventures like <strong>sIQurity AI</strong> and <strong>CyberSmrt</strong>, delivering cutting-edge cybersecurity solutions.</p>
 
@@ -189,7 +302,7 @@
 
 <ul>
   <li><strong>Email:</strong> <a href="mailto:anthony.rossi1983@gmail.com">anthony.rossi1983@gmail.com</a></li>
-  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anthonyrossi1983">Your LinkedIn Profile</a></li>
+  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anthonyrossi1983">https://www.linkedin.com/in/anthonyrossi1983</a></li>
 </ul>
 
 <hr />
@@ -208,14 +321,15 @@
 
 
 
-
   </div>
 </div>
+
+      
     </div>
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
       Enter your search term...
     </label>
@@ -243,7 +357,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 Tony Rossi's Cybersecurity Portfolio. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="https://xtonyknucklesx.github.io">Tony Rossi's Cybersecurity Portfolio</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -263,6 +377,20 @@
 
 
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('hamburger-toggle');
+        const sideMenu = document.querySelector('.side-menu');
 
+        toggleButton.addEventListener('click', function() {
+          // Check current state and toggle display
+          if (sideMenu.style.display === 'block') {
+            sideMenu.style.display = 'none';
+          } else {
+            sideMenu.style.display = 'block';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

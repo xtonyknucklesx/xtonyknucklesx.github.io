@@ -1,0 +1,64 @@
+/* Custom styling for the hero header */
+.page__hero {
+  min-height: 300px; /* Set the desired minimum height */
+  padding: 3rem 1rem; /* Adjust the padding as needed */
+  background-size: cover;   /* Ensure background images cover the area */
+  background-position: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .page__hero {
+    min-height: 300px; /* A smaller height for mobile devices */
+  }
+}
+
+/* Default styles: visible links are shown, hamburger hidden */
+.visible-links {
+  display: flex;
+  list-style: none;
+  /* Additional styling for layout, spacing, etc. */
+}
+
+.hamburger-menu {
+  display: none; /* Hide hamburger by default */
+}
+
+/* Responsive behavior: On smaller screens, hide visible links and show hamburger menu */
+@media screen and (max-width: 768px) {
+  .visible-links {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Style the hamburger button */
+  #hamburger-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Initially hide the side menu */
+  .side-menu {
+    display: none;
+    list-style: none;
+    position: absolute; /* or fixed, depending on your design */
+    top: 50px; /* Adjust as needed */
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Style side menu items */
+  .side-menu__item {
+    margin-bottom: 0.5rem;
+  }
+  .side-menu__item a {
+    color: #333;
+    text-decoration: none;
+  }
+}
