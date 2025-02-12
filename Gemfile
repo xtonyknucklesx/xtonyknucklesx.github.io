@@ -11,7 +11,7 @@ source "https://rubygems.org"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
 # gem "jekyll-theme-time-machine", "~> 0.2.0"
-# gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", "~> 4.26.2"
 # gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

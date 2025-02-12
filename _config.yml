@@ -6,11 +6,12 @@ description: >
 baseurl: ""                    # Leave empty if deploying at the root domain
 url: "https://xtonyknucklesx.github.io"  # Your GitHub Pages URL
 github_username: xtonyknucklesx
-minimal_mistakes_skin: "air"
+minimal_mistakes_skin: "dark"
 search: true
 lunr:
   search_within_pages: true
 locale: en-US
+logo: /assets/img/logo3.png
 
 # Author details
 author:
@@ -21,7 +22,7 @@ author:
 markdown: kramdown
 
 # Theme configuration using a remote theme
-remote_theme: mmistakes/minimal-mistakes@4.24.0  # Use the appropriate version or remove the version tag if not needed
+remote_theme: mmistakes/minimal-mistakes@4.26.2  # Use the appropriate version or remove the version tag if not needed
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

@@ -1,15 +1,15 @@
 ---
 layout: home
-title: "Tony Rossi's Life"
-excerpt: "A portfolio showcasing my expertise in vulnerability management, threat modeling, GRC, and entrepreneurship."
-hero:
-  image: /assets/img/hero.png  # Replace with the path to your hero image
-  overlay_color: "#000000"
-  overlay_opacity: 0.5
+header:
+  overlay_image: /assets/img/hero4.png
+  overlay_filter: rgba(0, 0, 0, 0.6)
+title: "Tony Rossi"
+excerpt: "Defending Tomorrow's Digital World, Today."
 permalink: /
+logo_path: /assets/img/logo3.png
 ---
 
-## About Me
+###### About Me
 
 I'm **Tony Rossi**, a cybersecurity professional with over **21 years of experience** in vulnerability management, threat modeling, GRC, and entrepreneurship. My journey began in the U.S. Navy, where I built the first cybersecurity program for the submarine force and automated critical tasks using Python and open-source tools. Today, I channel that experience into innovative ventures like **sIQurity AI** and **CyberSmrt**, delivering cutting-edge cybersecurity solutions.
 
@@ -42,7 +42,7 @@ Explore some of my latest projects and insights:
 I'm always excited to connect with fellow cybersecurity professionals and innovators. Feel free to reach out via:
 
 - **Email:** [anthony.rossi1983@gmail.com](mailto:anthony.rossi1983@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/anthonyrossi1983)
+- **LinkedIn:** [https://www.linkedin.com/in/anthonyrossi1983](https://www.linkedin.com/in/anthonyrossi1983)
 
 ---
 

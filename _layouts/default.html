@@ -1,0 +1,52 @@
+---
+---
+
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+
+    <div class="initial-content">
+      {{ content }}
+      {% include after-content.html %}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('hamburger-toggle');
+        const sideMenu = document.querySelector('.side-menu');
+
+        toggleButton.addEventListener('click', function() {
+          // Check current state and toggle display
+          if (sideMenu.style.display === 'block') {
+            sideMenu.style.display = 'none';
+          } else {
+            sideMenu.style.display = 'block';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
